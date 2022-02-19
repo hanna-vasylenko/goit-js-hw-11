@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/goitacademy/goit-js-hw-11.git"
+    "url": "git+https://github.com/hanna-vasylenko/goit-js-hw-11.git"
   },
   "keywords": [],
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",
@@ -27,6 +27,7 @@
   },
   "dependencies": {
     "axios": "^0.26.0",
-    "notiflix": "^3.2.4"
+    "notiflix": "^3.2.4",
+    "simplelightbox": "^2.10.2"
   }
 }
