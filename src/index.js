@@ -23,7 +23,7 @@ async function onSearch(e) {
   page = 1;
   clearMarkup();
 
-  const inputValue = e.currentTarget.elements.searchQuery.value.trim();
+  inputValue = e.currentTarget.elements.searchQuery.value.trim();
   if (!inputValue) {
     return;
   }
