@@ -1,18 +1,29 @@
 img {
   object-fit: cover;
 }
+body {
+  background: rgb(137, 74, 191);
+  background: linear-gradient(
+    90deg,
+    rgba(137, 74, 191, 1) 3%,
+    rgba(25, 126, 24, 0.9906556372549019) 46%,
+    rgba(244, 197, 123, 1) 97%
+  );
+}
 
 .search-form {
   text-align: center;
   width: auto;
   margin: 0 auto;
-  margin-bottom: 20px;
-  padding-bottom: 10px;
-  background-color: #d6f7d1ec;
+  margin-bottom: 17px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background-color: rgba(168, 154, 174, 0.338);
 }
 .search-form input {
+  height: 30px;
   font-family: Arial;
-  background-color: rgb(166, 205, 166);
+  background-color: rgba(255, 254, 255, 0.399);
   border: 1px solid rgb(40, 34, 34);
   border-radius: 3px;
   margin-right: 20px;
@@ -25,10 +36,16 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  text-align: center;
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); */
 }
 .photo-card {
   width: 300px;
-  border: 1px solid rgb(193, 210, 193);
+  border: 1px solid rgb(93, 81, 106);
   border-radius: 5px;
   margin: 5px;
 }
@@ -51,8 +68,8 @@ img {
 .load-more,
 .search-form button {
   cursor: pointer;
-  box-shadow: 5px 5px 2px #dadfd95b;
-  background-color: rgb(166, 205, 166);
+  box-shadow: 2px 2px 2px #3c433b5b;
+  background-color: rgb(96, 138, 96);
   border-radius: 3px;
   border: 1px solid rgb(40, 34, 34);
   display: inline-block;
@@ -69,10 +86,15 @@ img {
 
 .load-more:hover,
 .search-form button:hover {
-  background-color: #2e6026ec;
+  background-color: #362f4bec;
 }
 .load-more {
+  text-align: center;
   padding: 5px 5px;
   display: inline-block;
-  font-size: 16px;
+  font-size: 26px;
+  display: flex;
+  text-align: center;
+  /* position: relative;
+  top: 1px; */
 }

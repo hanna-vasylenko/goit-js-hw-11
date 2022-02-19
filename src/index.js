@@ -25,6 +25,8 @@ async function onSearch(e) {
 
   inputValue = e.currentTarget.elements.searchQuery.value.trim();
   if (!inputValue) {
+    Notiflix.Notify.failure('Sorry, there are no such images! Please try fill in form!');
+
     return;
   }
   try {
