@@ -26,7 +26,7 @@ async function onSearch(e) {
   inputValue = e.currentTarget.elements.searchQuery.value.trim();
   if (!inputValue) {
     Notiflix.Notify.failure('Sorry, there are no such images! Please try fill in form!');
-
+    loadMoreHidden();
     return;
   }
   try {
@@ -36,6 +36,7 @@ async function onSearch(e) {
       Notiflix.Notify.failure(
         'Sorry, there are no images matching your search query. Please try again.',
       );
+      loadMoreHidden();
       return;
     }
     renderMarkup(data.hits);
